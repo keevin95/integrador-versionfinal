@@ -1,0 +1,113 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+header {
+  height: 11vh;
+}
+
+header .navbar {
+  font-family: 'Bitter', serif;
+  padding: 0px;
+  color: #9c67e2;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .navbar .logo {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header .navbar .logo a {
+  margin: auto;
+  text-align: center;
+}
+
+header .navbar .logo a i {
+  margin-left: 12px;
+  margin-right: 12px;
+  color: #9c67e2;
+  font-size: 2.9em;
+}
+
+header .navbar .logo h1 {
+  margin: 0px;
+  font-size: 2.9em;
+}
+
+header .navbar .menu {
+  margin-left: 1%;
+  width: 59%;
+  text-align: center;
+}
+
+header .navbar .menu ul {
+  margin: auto;
+}
+
+header .navbar .menu ul li {
+  display: inline;
+  padding: 5px;
+}
+
+header .navbar .menu ul li a {
+  text-decoration: none;
+  color: #9c67e2;
+}
+
+header .navbar .menu ul li:hover {
+  border-bottom: 1px solid #9c67e2;
+}
+
+header .navbar .dropdown {
+  position: absolute;
+  z-index: 5;
+  display: none;
+}
+
+header .navbar .login_create {
+  width: 21%;
+}
+
+header .navbar .login_create ul {
+  margin: auto;
+  padding: 0px;
+  list-style: none;
+  text-align: end;
+  margin-right: 2%;
+}
+
+header .navbar .login_create ul li {
+  padding: 1%;
+  font-size: 20px;
+  display: inline;
+  cursor: pointer;
+}
+
+header .navbar .login_create ul li:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+/*# sourceMappingURL=style.css.map */

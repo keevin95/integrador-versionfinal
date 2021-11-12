@@ -1,0 +1,87 @@
+$negro_opaco: rgba(0, 0, 0, 0.8);
+$negro_sin_opacidad: rgba(0, 0, 0, 0.2);
+$fuxia:rgb(156, 103, 226);
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    height: 11vh;
+    .navbar {
+        font-family: 'Bitter', serif;
+        padding: 0px;
+        color: $fuxia;
+        position: relative;
+        height: 100%;
+        width: 100%;
+        background-color: $negro_opaco;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        .logo {
+            width: auto;
+            display: flex;
+            flex-direction: row;
+            a {
+                margin: auto;
+                text-align: center;
+                i {
+                    margin-left: 12px;
+                    margin-right: 12px;
+                    color: $fuxia;
+                    font-size: 2.9em;
+                }
+            }
+            h1 {
+                margin: 0px;
+                font-size: 2.9em;
+            }
+        }
+        .menu {
+            margin-left: 1%;
+            width: 59%;
+            text-align: center;
+            ul {
+                margin: auto;
+                li {
+                    display: inline;
+                    padding: 5px;
+                    a {
+                        text-decoration: none;
+                        color: $fuxia;
+                    }
+                    &:hover {
+                        border-bottom: 1px solid $fuxia;
+                    }
+                }
+            }
+        }
+        .dropdown {
+            position: absolute;
+            z-index: 5;
+            display: none;
+        }
+        .login_create {
+            width: 21%;
+            ul {
+                margin: auto;
+                padding: 0px;
+                list-style: none;
+                text-align: end;
+                margin-right: 2%;
+                li {
+                    padding: 1%;
+                    font-size: 20px;
+                    display: inline;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: $negro_sin_opacidad;
+                        transition: 500ms;
+                    }
+                }
+            }
+        }
+    }
+}
