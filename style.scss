@@ -1,13 +1,37 @@
 $negro_opaco: rgba(0, 0, 0, 0.8);
 $negro_sin_opacidad: rgba(0, 0, 0, 0.2);
 $fuxia:rgb(156, 103, 226);
+$gris_liviano:rgb(243, 240, 240);
 * {
     padding: 0px;
     margin: 0px;
 }
 
+@mixin ser-ven-cos {
+    width: 30%;
+    padding: 1%;
+    text-align: center;
+    p {
+        height: 12vh;
+    }
+    h3 {
+        color: $fuxia;
+    }
+    button {
+        border-radius: 30px;
+        padding: 1%;
+        bottom: 0px;
+        right: 0px;
+        width: 50%;
+        border: none;
+        background-color: $negro_opaco;
+        color: $fuxia;
+    }
+}
+
 header {
     height: 11vh;
+    width: 100%;
     .navbar {
         font-family: 'Bitter', serif;
         padding: 0px;
@@ -41,7 +65,7 @@ header {
         }
         .menu {
             margin-left: 1%;
-            width: 59%;
+            width: 58%;
             text-align: center;
             ul {
                 margin: auto;
@@ -49,6 +73,7 @@ header {
                     display: inline;
                     padding: 5px;
                     a {
+                        text-transform: uppercase;
                         text-decoration: none;
                         color: $fuxia;
                     }
@@ -69,19 +94,227 @@ header {
                 margin: auto;
                 padding: 0px;
                 list-style: none;
-                text-align: end;
-                margin-right: 2%;
+                text-align: center;
                 li {
                     padding: 1%;
                     font-size: 20px;
                     display: inline;
                     cursor: pointer;
                     &:hover {
-                        background-color: $negro_sin_opacidad;
+                        border-bottom: 1px solid $fuxia;
                         transition: 500ms;
                     }
                 }
             }
         }
     }
+}
+
+main {
+    background-color: $gris_liviano;
+    width: 100%;
+    .section_wave {
+        div {
+            position: relative;
+            img {
+                width: 1903px;
+                object-fit: cover;
+            }
+            .wave {
+                width: 100%;
+                position: absolute;
+                bottom: 0px;
+            }
+        }
+    }
+    .seccion_informacion {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-around;
+        .servicios {
+            @include ser-ven-cos;
+        }
+        .ventajas {
+            @include ser-ven-cos;
+        }
+        .costos {
+            @include ser-ven-cos;
+        }
+    }
+    .section_juegos {
+        margin-top: 3%;
+        width: 100%;
+        background-color: $negro_opaco;
+        border-bottom: 2px solid $fuxia;
+        border-top: 2px solid $fuxia;
+        padding: 1%;
+        .juegos {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: center;
+            h3 {
+                width: 100%;
+                text-align: center;
+                color: $fuxia;
+                text-transform: uppercase;
+                font-style: italic;
+            }
+            .card {
+                margin-left: 10px;
+                width: 17rem;
+                position: relative;
+                border: 1px solid black;
+                img {
+                    object-fit: cover;
+                    height: 100%;
+                }
+                h4 {
+                    position: absolute;
+                    bottom: 0px;
+                    width: 100%;
+                    text-align: center;
+                    z-index: 5;
+                    color: white;
+                }
+            }
+        }
+    }
+    .section_contacto {
+        width: 100%;
+        .contacto {
+            padding: 2%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            h3 {
+                padding: 1%;
+                margin: auto;
+                border-radius: 30px;
+                text-align: center;
+                width: 70%;
+                margin-bottom: 2%;
+                background-color: $negro_opaco;
+                color: $fuxia;
+                box-shadow: 0px 0px 10px 2px $fuxia;
+            }
+            form {
+                width: 50%;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+                input,
+                input[type='submit'] {
+                    margin: auto;
+                    width: 30%;
+                    margin-top: 1%;
+                    margin-bottom: 1%;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+                input[type='submit'] {
+                    background-color: $negro_opaco;
+                    color: $fuxia;
+                    text-transform: uppercase;
+                    border: none;
+                    border-radius: 30px;
+                    &:hover {
+                        box-shadow: 0px 0px 10px 2px $fuxia;
+                    }
+                }
+                textarea {
+                    resize: none;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+        .wave {
+            width: 100%;
+        }
+    }
+    .section_suscripciones {
+        position: relative;
+        width: 100%;
+        background-color: $negro_opaco;
+        padding: 0% 2% 2% 2%;
+        h2 {
+            text-transform: uppercase;
+            font-size: 5em;
+            width: 100%;
+            text-align: center;
+            font-style: italic;
+            color: $fuxia;
+            margin-bottom: 2%;
+            letter-spacing: 2px;
+        }
+        .suscripciones {
+            color: $fuxia;
+            padding: 2%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            display: none;
+            .card {
+                width: 18rem;
+                padding: 1%;
+                background-color: $gris_liviano;
+                border-radius: 500px;
+                text-align: center;
+                color: $negro_opaco;
+                margin-top: 1%;
+                border-radius: 2px solid $fuxia;
+                .btn {
+                    background-color: $negro_opaco;
+                    color: $gris_liviano;
+                    border: none;
+                }
+            }
+        }
+        .carousel {
+            width: 50%;
+            margin: auto;
+            .card {
+                margin: auto;
+                width: 25rem;
+                padding: 1%;
+                background-color: $gris_liviano;
+                border-radius: 300px;
+                text-align: center;
+                color: $negro_opaco;
+                border-radius: 2px solid $fuxia;
+                .btn {
+                    background-color: $negro_opaco;
+                    color: $gris_liviano;
+                    border: none;
+                }
+            }
+        }
+        .wave {
+            position: absolute;
+            width: 100%;
+            top: 0px;
+        }
+    }
+}
+
+footer {
+    border-top: 1px solid $fuxia;
+    padding: 5px;
+    background-color: $negro_opaco;
+    color: $fuxia;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }

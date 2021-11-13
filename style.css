@@ -5,6 +5,7 @@
 
 header {
   height: 11vh;
+  width: 100%;
 }
 
 header .navbar {
@@ -58,7 +59,7 @@ header .navbar .logo h1 {
 
 header .navbar .menu {
   margin-left: 1%;
-  width: 59%;
+  width: 58%;
   text-align: center;
 }
 
@@ -72,6 +73,7 @@ header .navbar .menu ul li {
 }
 
 header .navbar .menu ul li a {
+  text-transform: uppercase;
   text-decoration: none;
   color: #9c67e2;
 }
@@ -94,8 +96,7 @@ header .navbar .login_create ul {
   margin: auto;
   padding: 0px;
   list-style: none;
-  text-align: end;
-  margin-right: 2%;
+  text-align: center;
 }
 
 header .navbar .login_create ul li {
@@ -106,8 +107,358 @@ header .navbar .login_create ul li {
 }
 
 header .navbar .login_create ul li:hover {
-  background-color: rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid #9c67e2;
   -webkit-transition: 500ms;
   transition: 500ms;
+}
+
+main {
+  background-color: #f3f0f0;
+  width: 100%;
+}
+
+main .section_wave div {
+  position: relative;
+}
+
+main .section_wave div img {
+  width: 1903px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .section_wave div .wave {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+}
+
+main .seccion_informacion {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .seccion_informacion .servicios {
+  width: 30%;
+  padding: 1%;
+  text-align: center;
+}
+
+main .seccion_informacion .servicios p {
+  height: 12vh;
+}
+
+main .seccion_informacion .servicios h3 {
+  color: #9c67e2;
+}
+
+main .seccion_informacion .servicios button {
+  border-radius: 30px;
+  padding: 1%;
+  bottom: 0px;
+  right: 0px;
+  width: 50%;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #9c67e2;
+}
+
+main .seccion_informacion .ventajas {
+  width: 30%;
+  padding: 1%;
+  text-align: center;
+}
+
+main .seccion_informacion .ventajas p {
+  height: 12vh;
+}
+
+main .seccion_informacion .ventajas h3 {
+  color: #9c67e2;
+}
+
+main .seccion_informacion .ventajas button {
+  border-radius: 30px;
+  padding: 1%;
+  bottom: 0px;
+  right: 0px;
+  width: 50%;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #9c67e2;
+}
+
+main .seccion_informacion .costos {
+  width: 30%;
+  padding: 1%;
+  text-align: center;
+}
+
+main .seccion_informacion .costos p {
+  height: 12vh;
+}
+
+main .seccion_informacion .costos h3 {
+  color: #9c67e2;
+}
+
+main .seccion_informacion .costos button {
+  border-radius: 30px;
+  padding: 1%;
+  bottom: 0px;
+  right: 0px;
+  width: 50%;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #9c67e2;
+}
+
+main .section_juegos {
+  margin-top: 3%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-bottom: 2px solid #9c67e2;
+  border-top: 2px solid #9c67e2;
+  padding: 1%;
+}
+
+main .section_juegos .juegos {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+main .section_juegos .juegos h3 {
+  width: 100%;
+  text-align: center;
+  color: #9c67e2;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+main .section_juegos .juegos .card {
+  margin-left: 10px;
+  width: 17rem;
+  position: relative;
+  border: 1px solid black;
+}
+
+main .section_juegos .juegos .card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+
+main .section_juegos .juegos .card h4 {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  z-index: 5;
+  color: white;
+}
+
+main .section_contacto {
+  width: 100%;
+}
+
+main .section_contacto .contacto {
+  padding: 2%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .section_contacto .contacto h3 {
+  padding: 1%;
+  margin: auto;
+  border-radius: 30px;
+  text-align: center;
+  width: 70%;
+  margin-bottom: 2%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #9c67e2;
+  -webkit-box-shadow: 0px 0px 10px 2px #9c67e2;
+          box-shadow: 0px 0px 10px 2px #9c67e2;
+}
+
+main .section_contacto .contacto form {
+  width: 50%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .section_contacto .contacto form input,
+main .section_contacto .contacto form input[type='submit'] {
+  margin: auto;
+  width: 30%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+main .section_contacto .contacto form input:focus,
+main .section_contacto .contacto form input[type='submit']:focus {
+  outline: none;
+}
+
+main .section_contacto .contacto form input[type='submit'] {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #9c67e2;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 30px;
+}
+
+main .section_contacto .contacto form input[type='submit']:hover {
+  -webkit-box-shadow: 0px 0px 10px 2px #9c67e2;
+          box-shadow: 0px 0px 10px 2px #9c67e2;
+}
+
+main .section_contacto .contacto form textarea {
+  resize: none;
+}
+
+main .section_contacto .contacto form textarea:focus {
+  outline: none;
+}
+
+main .section_contacto .wave {
+  width: 100%;
+}
+
+main .section_suscripciones {
+  position: relative;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 0% 2% 2% 2%;
+}
+
+main .section_suscripciones h2 {
+  text-transform: uppercase;
+  font-size: 5em;
+  width: 100%;
+  text-align: center;
+  font-style: italic;
+  color: #9c67e2;
+  margin-bottom: 2%;
+  letter-spacing: 2px;
+}
+
+main .section_suscripciones .suscripciones {
+  color: #9c67e2;
+  padding: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+main .section_suscripciones .suscripciones .card {
+  width: 18rem;
+  padding: 1%;
+  background-color: #f3f0f0;
+  border-radius: 500px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+  margin-top: 1%;
+  border-radius: 2px solid #9c67e2;
+}
+
+main .section_suscripciones .suscripciones .card .btn {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #f3f0f0;
+  border: none;
+}
+
+main .section_suscripciones .carousel {
+  width: 50%;
+  margin: auto;
+}
+
+main .section_suscripciones .carousel .card {
+  margin: auto;
+  width: 25rem;
+  padding: 1%;
+  background-color: #f3f0f0;
+  border-radius: 300px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+  border-radius: 2px solid #9c67e2;
+}
+
+main .section_suscripciones .carousel .card .btn {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #f3f0f0;
+  border: none;
+}
+
+main .section_suscripciones .wave {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+}
+
+footer {
+  border-top: 1px solid #9c67e2;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #9c67e2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
