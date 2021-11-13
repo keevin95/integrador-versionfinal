@@ -29,6 +29,55 @@ $gris_liviano:rgb(243, 240, 240);
     }
 }
 
+@mixin formularios {
+    padding: 2%;
+    background-color: white;
+    border: 1px solid $fuxia;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+}
+
+@mixin btn-entrar-crear {
+    color: $gris_liviano;
+    background-color: $fuxia;
+    padding: 2px;
+    margin-top: 3%;
+    width: 30%;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    &:hover {
+        box-shadow: 5px 3px rgba(190, 190, 190, 0.8);
+    }
+}
+
+@mixin btn-forgot {
+    border-radius: 30px;
+    border: 1px solid $fuxia;
+    color: $fuxia;
+    width: 30%;
+    background: white;
+    padding: 2px;
+}
+
+@mixin input-form {
+    padding: 5px;
+    margin: auto;
+    width: 20%;
+    margin-bottom: 1%;
+    border: none;
+    border-bottom: 1px solid $fuxia;
+    &::placeholder {
+        color: rgb(199, 198, 198);
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
 header {
     height: 11vh;
     width: 100%;
@@ -72,8 +121,8 @@ header {
                 li {
                     display: inline;
                     padding: 5px;
+                    text-transform: uppercase;
                     a {
-                        text-transform: uppercase;
                         text-decoration: none;
                         color: $fuxia;
                     }
@@ -100,9 +149,14 @@ header {
                     font-size: 20px;
                     display: inline;
                     cursor: pointer;
+                    text-transform: uppercase;
                     &:hover {
                         border-bottom: 1px solid $fuxia;
                         transition: 500ms;
+                    }
+                    a {
+                        color: $fuxia;
+                        text-decoration: none;
                     }
                 }
             }
@@ -317,4 +371,79 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+
+/*----------------------------------------------INICIAR SESION-CREAR CUENTA-------------------------------------------------*/
+
+.main_iniciarSesion {
+    width: 100%;
+    .section_login {
+        .login {
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            align-items: center;
+            border-radius: 15px;
+            width: 100%;
+            background-color: $gris_liviano;
+            color: $negro_opaco;
+            img {
+                width: 10%;
+                max-height: 40%;
+            }
+            form {
+                @include formularios;
+                margin-top: 2%;
+                margin-bottom: 2%;
+                h3 {
+                    text-transform: uppercase;
+                    color: $fuxia;
+                    font-size: 2em;
+                    margin-top: 0%;
+                }
+                input {
+                    @include input-form
+                }
+                .btn {
+                    @include btn-entrar-crear()
+                }
+                .forgot {
+                    @include btn-forgot;
+                }
+            }
+            .wave {
+                width: 100%;
+            }
+        }
+    }
+    .section_crearCuenta {
+        background-color: $negro_opaco;
+        padding: 2%;
+        form {
+            @include formularios;
+            h3 {
+                width: 100%;
+                text-align: center;
+                color: $fuxia;
+            }
+            .btn {
+                @include btn-entrar-crear;
+            }
+            .datos {
+                i {
+                    width: 5%
+                }
+                .forgot {
+                    @include btn-forgot;
+                }
+                margin-bottom: 1%;
+                input {
+                    @include input-form;
+                    width: 95%;
+                }
+            }
+        }
+    }
 }

@@ -70,10 +70,10 @@ header .navbar .menu ul {
 header .navbar .menu ul li {
   display: inline;
   padding: 5px;
+  text-transform: uppercase;
 }
 
 header .navbar .menu ul li a {
-  text-transform: uppercase;
   text-decoration: none;
   color: #9c67e2;
 }
@@ -104,12 +104,18 @@ header .navbar .login_create ul li {
   font-size: 20px;
   display: inline;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 header .navbar .login_create ul li:hover {
   border-bottom: 1px solid #9c67e2;
   -webkit-transition: 500ms;
   transition: 500ms;
+}
+
+header .navbar .login_create ul li a {
+  color: #9c67e2;
+  text-decoration: none;
 }
 
 main {
@@ -460,5 +466,211 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+}
+
+/*----------------------------------------------INICIAR SESION-CREAR CUENTA-------------------------------------------------*/
+.main_iniciarSesion {
+  width: 100%;
+}
+
+.main_iniciarSesion .section_login .login {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+  width: 100%;
+  background-color: #f3f0f0;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.main_iniciarSesion .section_login .login img {
+  width: 10%;
+  max-height: 40%;
+}
+
+.main_iniciarSesion .section_login .login form {
+  padding: 2%;
+  background-color: white;
+  border: 1px solid #9c67e2;
+  width: 50%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 30px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.main_iniciarSesion .section_login .login form h3 {
+  text-transform: uppercase;
+  color: #9c67e2;
+  font-size: 2em;
+  margin-top: 0%;
+}
+
+.main_iniciarSesion .section_login .login form input {
+  padding: 5px;
+  margin: auto;
+  width: 20%;
+  margin-bottom: 1%;
+  border: none;
+  border-bottom: 1px solid #9c67e2;
+}
+
+.main_iniciarSesion .section_login .login form input::-webkit-input-placeholder {
+  color: #c7c6c6;
+}
+
+.main_iniciarSesion .section_login .login form input:-ms-input-placeholder {
+  color: #c7c6c6;
+}
+
+.main_iniciarSesion .section_login .login form input::-ms-input-placeholder {
+  color: #c7c6c6;
+}
+
+.main_iniciarSesion .section_login .login form input::placeholder {
+  color: #c7c6c6;
+}
+
+.main_iniciarSesion .section_login .login form input:focus {
+  outline: none;
+}
+
+.main_iniciarSesion .section_login .login form .btn {
+  color: #f3f0f0;
+  background-color: #9c67e2;
+  padding: 2px;
+  margin-top: 3%;
+  width: 30%;
+  border: 1px solid transparent;
+  border-radius: 30px;
+}
+
+.main_iniciarSesion .section_login .login form .btn:hover {
+  -webkit-box-shadow: 5px 3px rgba(190, 190, 190, 0.8);
+          box-shadow: 5px 3px rgba(190, 190, 190, 0.8);
+}
+
+.main_iniciarSesion .section_login .login form .forgot {
+  border-radius: 30px;
+  border: 1px solid #9c67e2;
+  color: #9c67e2;
+  width: 30%;
+  background: white;
+  padding: 2px;
+}
+
+.main_iniciarSesion .section_login .login .wave {
+  width: 100%;
+}
+
+.main_iniciarSesion .section_crearCuenta {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 2%;
+}
+
+.main_iniciarSesion .section_crearCuenta form {
+  padding: 2%;
+  background-color: white;
+  border: 1px solid #9c67e2;
+  width: 50%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 30px;
+}
+
+.main_iniciarSesion .section_crearCuenta form h3 {
+  width: 100%;
+  text-align: center;
+  color: #9c67e2;
+}
+
+.main_iniciarSesion .section_crearCuenta form .btn {
+  color: #f3f0f0;
+  background-color: #9c67e2;
+  padding: 2px;
+  margin-top: 3%;
+  width: 30%;
+  border: 1px solid transparent;
+  border-radius: 30px;
+}
+
+.main_iniciarSesion .section_crearCuenta form .btn:hover {
+  -webkit-box-shadow: 5px 3px rgba(190, 190, 190, 0.8);
+          box-shadow: 5px 3px rgba(190, 190, 190, 0.8);
+}
+
+.main_iniciarSesion .section_crearCuenta form .datos {
+  margin-bottom: 1%;
+}
+
+.main_iniciarSesion .section_crearCuenta form .datos i {
+  width: 5%;
+}
+
+.main_iniciarSesion .section_crearCuenta form .datos .forgot {
+  border-radius: 30px;
+  border: 1px solid #9c67e2;
+  color: #9c67e2;
+  width: 30%;
+  background: white;
+  padding: 2px;
+}
+
+.main_iniciarSesion .section_crearCuenta form .datos input {
+  padding: 5px;
+  margin: auto;
+  width: 20%;
+  margin-bottom: 1%;
+  border: none;
+  border-bottom: 1px solid #9c67e2;
+  width: 95%;
+}
+
+.main_iniciarSesion .section_crearCuenta form .datos input::-webkit-input-placeholder {
+  color: #c7c6c6;
+}
+
+.main_iniciarSesion .section_crearCuenta form .datos input:-ms-input-placeholder {
+  color: #c7c6c6;
+}
+
+.main_iniciarSesion .section_crearCuenta form .datos input::-ms-input-placeholder {
+  color: #c7c6c6;
+}
+
+.main_iniciarSesion .section_crearCuenta form .datos input::placeholder {
+  color: #c7c6c6;
+}
+
+.main_iniciarSesion .section_crearCuenta form .datos input:focus {
+  outline: none;
 }
 /*# sourceMappingURL=style.css.map */
