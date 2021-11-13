@@ -139,7 +139,7 @@ main .section_wave div .wave {
   bottom: 0px;
 }
 
-main .seccion_informacion {
+main .section_informacion {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -154,21 +154,21 @@ main .seccion_informacion {
       justify-content: space-around;
 }
 
-main .seccion_informacion .servicios {
+main .section_informacion .servicios {
   width: 30%;
   padding: 1%;
   text-align: center;
 }
 
-main .seccion_informacion .servicios p {
+main .section_informacion .servicios p {
   height: 12vh;
 }
 
-main .seccion_informacion .servicios h3 {
+main .section_informacion .servicios h3 {
   color: #9c67e2;
 }
 
-main .seccion_informacion .servicios button {
+main .section_informacion .servicios button {
   border-radius: 30px;
   padding: 1%;
   bottom: 0px;
@@ -179,21 +179,21 @@ main .seccion_informacion .servicios button {
   color: #9c67e2;
 }
 
-main .seccion_informacion .ventajas {
+main .section_informacion .ventajas {
   width: 30%;
   padding: 1%;
   text-align: center;
 }
 
-main .seccion_informacion .ventajas p {
+main .section_informacion .ventajas p {
   height: 12vh;
 }
 
-main .seccion_informacion .ventajas h3 {
+main .section_informacion .ventajas h3 {
   color: #9c67e2;
 }
 
-main .seccion_informacion .ventajas button {
+main .section_informacion .ventajas button {
   border-radius: 30px;
   padding: 1%;
   bottom: 0px;
@@ -204,21 +204,21 @@ main .seccion_informacion .ventajas button {
   color: #9c67e2;
 }
 
-main .seccion_informacion .costos {
+main .section_informacion .costos {
   width: 30%;
   padding: 1%;
   text-align: center;
 }
 
-main .seccion_informacion .costos p {
+main .section_informacion .costos p {
   height: 12vh;
 }
 
-main .seccion_informacion .costos h3 {
+main .section_informacion .costos h3 {
   color: #9c67e2;
 }
 
-main .seccion_informacion .costos button {
+main .section_informacion .costos button {
   border-radius: 30px;
   padding: 1%;
   bottom: 0px;
@@ -699,5 +699,69 @@ footer ul li a i {
 
 .main_iniciarSesion .section_crearCuenta form .datos input:focus {
   outline: none;
+}
+
+/*----------------------------------------------------RESPONSIVE----------------------------------------------------*/
+@media (max-width: 1280px) {
+  .header_index .navbar .logo {
+    width: 50%;
+    text-align: start;
+  }
+  .header_index .navbar .logo h1 {
+    width: 100%;
+  }
+  .header_index .navbar .logo a {
+    margin: 0%;
+  }
+  .header_index .navbar .menu {
+    display: none;
+  }
+  .header_index .navbar .login_create {
+    width: 50%;
+  }
+  .header_index .navbar .login_create ul {
+    text-align: end;
+    margin-right: 1%;
+  }
+  main .section_wave div img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .section_informacion {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .section_informacion .servicios h3 {
+    font-size: 1.5em;
+  }
+  main .section_informacion .servicios p {
+    height: 15vh;
+  }
+  main .section_informacion .ventajas h3 {
+    font-size: 1.5em;
+  }
+  main .section_informacion .ventajas p {
+    height: 15vh;
+  }
+  main .section_informacion .costos h3 {
+    font-size: 1.5em;
+  }
+  main .section_informacion .costos p {
+    height: 15vh;
+  }
+  main .section_informacion .costos .btn {
+    vertical-align: bottom;
+  }
+  main .section_juegos .juegos {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .section_juegos .juegos .card {
+    width: 12rem;
+    margin-left: 2px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
