@@ -368,9 +368,27 @@ footer {
     background-color: $negro_opaco;
     color: $fuxia;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
+    p {
+        width: 50%;
+    }
+    ul {
+        width: 50%;
+        list-style: none;
+        li {
+            display: inline;
+            a {
+                i {
+                    color: $fuxia;
+                    font-size: x-large;
+                    margin-left: 5%;
+                }
+            }
+        }
+    }
 }
 
 
@@ -422,7 +440,11 @@ footer {
         background-color: $negro_opaco;
         padding: 2%;
         form {
+            i {
+                font-size: xx-large;
+            }
             @include formularios;
+            border: 2px solid $fuxia;
             h3 {
                 width: 100%;
                 text-align: center;

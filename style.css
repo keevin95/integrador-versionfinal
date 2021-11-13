@@ -459,13 +459,35 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+}
+
+footer p {
+  width: 50%;
+}
+
+footer ul {
+  width: 50%;
+  list-style: none;
+}
+
+footer ul li {
+  display: inline;
+}
+
+footer ul li a i {
+  color: #9c67e2;
+  font-size: x-large;
+  margin-left: 5%;
 }
 
 /*----------------------------------------------INICIAR SESION-CREAR CUENTA-------------------------------------------------*/
@@ -604,6 +626,11 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   border-radius: 30px;
+  border: 2px solid #9c67e2;
+}
+
+.main_iniciarSesion .section_crearCuenta form i {
+  font-size: xx-large;
 }
 
 .main_iniciarSesion .section_crearCuenta form h3 {
