@@ -9,7 +9,7 @@ header {
 }
 
 header .navbar {
-  font-family: 'Bitter', serif;
+  font-family: "Bitter", serif;
   padding: 0px;
   color: #9c67e2;
   position: relative;
@@ -171,8 +171,6 @@ main .section_informacion .servicios h3 {
 main .section_informacion .servicios button {
   border-radius: 30px;
   padding: 1%;
-  bottom: 0px;
-  right: 0px;
   width: 50%;
   border: none;
   background-color: rgba(0, 0, 0, 0.8);
@@ -196,8 +194,6 @@ main .section_informacion .ventajas h3 {
 main .section_informacion .ventajas button {
   border-radius: 30px;
   padding: 1%;
-  bottom: 0px;
-  right: 0px;
   width: 50%;
   border: none;
   background-color: rgba(0, 0, 0, 0.8);
@@ -221,8 +217,6 @@ main .section_informacion .costos h3 {
 main .section_informacion .costos button {
   border-radius: 30px;
   padding: 1%;
-  bottom: 0px;
-  right: 0px;
   width: 50%;
   border: none;
   background-color: rgba(0, 0, 0, 0.8);
@@ -334,20 +328,26 @@ main .section_contacto .contacto form {
           justify-content: center;
 }
 
+main .section_contacto .contacto form input {
+  padding: 1%;
+}
+
 main .section_contacto .contacto form input,
-main .section_contacto .contacto form input[type='submit'] {
+main .section_contacto .contacto form input[type="submit"] {
+  border: none;
   margin: auto;
   width: 30%;
   margin-top: 1%;
   margin-bottom: 1%;
+  border-radius: 30px;
 }
 
 main .section_contacto .contacto form input:focus,
-main .section_contacto .contacto form input[type='submit']:focus {
+main .section_contacto .contacto form input[type="submit"]:focus {
   outline: none;
 }
 
-main .section_contacto .contacto form input[type='submit'] {
+main .section_contacto .contacto form input[type="submit"] {
   background-color: rgba(0, 0, 0, 0.8);
   color: #9c67e2;
   text-transform: uppercase;
@@ -355,12 +355,14 @@ main .section_contacto .contacto form input[type='submit'] {
   border-radius: 30px;
 }
 
-main .section_contacto .contacto form input[type='submit']:hover {
+main .section_contacto .contacto form input[type="submit"]:hover {
   -webkit-box-shadow: 0px 0px 10px 2px #9c67e2;
           box-shadow: 0px 0px 10px 2px #9c67e2;
 }
 
 main .section_contacto .contacto form textarea {
+  padding: 2%;
+  border-radius: 30px;
   resize: none;
 }
 
@@ -452,6 +454,7 @@ main .section_suscripciones .wave {
 }
 
 footer {
+  height: 5vh;
   border-top: 1px solid #9c67e2;
   padding: 5px;
   background-color: rgba(0, 0, 0, 0.8);
@@ -751,9 +754,6 @@ footer ul li a i {
   main .section_informacion .costos p {
     height: 15vh;
   }
-  main .section_informacion .costos .btn {
-    vertical-align: bottom;
-  }
   main .section_juegos .juegos {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -762,6 +762,156 @@ footer ul li a i {
   main .section_juegos .juegos .card {
     width: 12rem;
     margin-left: 2px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .body_index {
+    height: 242vh;
+  }
+  .body_index main .section_informacion {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .body_index main .section_informacion .servicios h3 {
+    font-size: 1.3em;
+  }
+  .body_index main .section_informacion .servicios p {
+    height: 15vh;
+  }
+  .body_index main .section_informacion .ventajas h3 {
+    font-size: 1.3em;
+  }
+  .body_index main .section_informacion .ventajas p {
+    height: 15vh;
+  }
+  .body_index main .section_informacion .costos h3 {
+    font-size: 1.3em;
+  }
+  .body_index main .section_informacion .costos p {
+    height: 15vh;
+  }
+  .body_index main .section_juegos .juegos {
+    -webkit-box-pack: baseline;
+        -ms-flex-pack: baseline;
+            justify-content: baseline;
+  }
+  .body_index main .section_juegos .juegos .card {
+    width: 15rem;
+    margin-left: 10px;
+    margin-top: 15px;
+  }
+  .body_index footer {
+    height: 7vh;
+  }
+  .body_index footer p {
+    margin: 0%;
+  }
+  .body_index footer ul {
+    margin: 0%;
+  }
+  /*--------------------------------INICIAR SESION MEDIAQUERIE 1024--------------------------------*/
+  body {
+    height: 125vh;
+  }
+  body .main_iniciarSesion .section_login .login form {
+    width: 80%;
+  }
+  body .main_iniciarSesion .section_crearCuenta .crear_cuenta form {
+    width: 80%;
+  }
+  body footer {
+    height: 7vh;
+  }
+  body footer p {
+    margin: 0%;
+  }
+  body footer ul {
+    margin: 0%;
+  }
+}
+
+@media (max-width: 768px) {
+  .body_index {
+    height: 250vh;
+  }
+  .body_index .header_index .navbar .login_create ul {
+    margin-right: 3%;
+  }
+  .body_index main .section_informacion {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .body_index main .section_informacion .servicios {
+    width: 34%;
+    height: 30vh;
+  }
+  .body_index main .section_informacion .servicios h3 {
+    height: 5vh;
+  }
+  .body_index main .section_informacion .servicios p {
+    font-size: 13px;
+    font-weight: bold;
+  }
+  .body_index main .section_informacion .ventajas {
+    width: 34%;
+    height: 30vh;
+  }
+  .body_index main .section_informacion .ventajas h3 {
+    height: 5vh;
+  }
+  .body_index main .section_informacion .ventajas p {
+    font-size: 13px;
+    font-weight: bold;
+  }
+  .body_index main .section_informacion .costos {
+    width: 34%;
+    height: 30vh;
+  }
+  .body_index main .section_informacion .costos h3 {
+    height: 5vh;
+  }
+  .body_index main .section_informacion .costos p {
+    font-size: 13px;
+    font-weight: bold;
+  }
+  .body_index main .section_juegos {
+    margin-top: 0%;
+  }
+  .body_index main .section_juegos h3 {
+    margin-top: 2%;
+  }
+  .body_index main .section_juegos .juegos {
+    -webkit-box-pack: baseline;
+        -ms-flex-pack: baseline;
+            justify-content: baseline;
+  }
+  .body_index main .section_juegos .juegos .card {
+    width: 11rem;
+  }
+  .body_index main .section_contacto .contacto input {
+    width: 50%;
+    padding-left: 20px;
+  }
+  .body_index main .section_contacto .contacto textarea {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 20px;
+  }
+  .body_index main .section_suscripciones .carousel {
+    width: 80%;
+  }
+  .body_index footer {
+    height: 7vh;
+  }
+  /*--------------------------------INICIAR SESION MEDIAQUERIE 768--------------------------------*/
+  body {
+    height: 120vh;
+  }
+  body footer {
+    height: 7.5vh;
   }
 }
 /*# sourceMappingURL=style.css.map */

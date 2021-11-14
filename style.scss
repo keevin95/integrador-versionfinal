@@ -1,7 +1,7 @@
 $negro_opaco: rgba(0, 0, 0, 0.8);
 $negro_sin_opacidad: rgba(0, 0, 0, 0.2);
-$fuxia:rgb(156, 103, 226);
-$gris_liviano:rgb(243, 240, 240);
+$fuxia: rgb(156, 103, 226);
+$gris_liviano: rgb(243, 240, 240);
 * {
     padding: 0px;
     margin: 0px;
@@ -20,8 +20,6 @@ $gris_liviano:rgb(243, 240, 240);
     button {
         border-radius: 30px;
         padding: 1%;
-        bottom: 0px;
-        right: 0px;
         width: 50%;
         border: none;
         background-color: $negro_opaco;
@@ -82,7 +80,7 @@ header {
     height: 11vh;
     width: 100%;
     .navbar {
-        font-family: 'Bitter', serif;
+        font-family: "Bitter", serif;
         padding: 0px;
         color: $fuxia;
         position: relative;
@@ -265,17 +263,22 @@ main {
                 flex-direction: column;
                 text-align: center;
                 justify-content: center;
+                input {
+                    padding: 1%;
+                }
                 input,
-                input[type='submit'] {
+                input[type="submit"] {
+                    border: none;
                     margin: auto;
                     width: 30%;
                     margin-top: 1%;
                     margin-bottom: 1%;
+                    border-radius: 30px;
                     &:focus {
                         outline: none;
                     }
                 }
-                input[type='submit'] {
+                input[type="submit"] {
                     background-color: $negro_opaco;
                     color: $fuxia;
                     text-transform: uppercase;
@@ -286,6 +289,8 @@ main {
                     }
                 }
                 textarea {
+                    padding: 2%;
+                    border-radius: 30px;
                     resize: none;
                     &:focus {
                         outline: none;
@@ -363,6 +368,7 @@ main {
 }
 
 footer {
+    height: 5vh;
     border-top: 1px solid $fuxia;
     padding: 5px;
     background-color: $negro_opaco;
@@ -422,10 +428,10 @@ footer {
                     margin-top: 0%;
                 }
                 input {
-                    @include input-form
+                    @include input-form;
                 }
                 .btn {
-                    @include btn-entrar-crear()
+                    @include btn-entrar-crear();
                 }
                 .forgot {
                     @include btn-forgot;
@@ -455,7 +461,7 @@ footer {
             }
             .datos {
                 i {
-                    width: 5%
+                    width: 5%;
                 }
                 .forgot {
                     @include btn-forgot;
@@ -473,7 +479,7 @@ footer {
 
 /*----------------------------------------------------RESPONSIVE----------------------------------------------------*/
 
-@media(max-width:1280px) {
+@media (max-width: 1280px) {
     .header_index {
         .navbar {
             .logo {
@@ -532,9 +538,6 @@ footer {
                 p {
                     height: 15vh;
                 }
-                .btn {
-                    vertical-align: bottom;
-                }
             }
         }
         .section_juegos {
@@ -545,6 +548,182 @@ footer {
                     margin-left: 2px;
                 }
             }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .body_index {
+        height: 242vh;
+        main {
+            .section_informacion {
+                justify-content: center;
+                .servicios {
+                    h3 {
+                        font-size: 1.3em;
+                    }
+                    p {
+                        height: 15vh;
+                    }
+                }
+                .ventajas {
+                    h3 {
+                        font-size: 1.3em;
+                    }
+                    p {
+                        height: 15vh;
+                    }
+                }
+                .costos {
+                    h3 {
+                        font-size: 1.3em;
+                    }
+                    p {
+                        height: 15vh;
+                    }
+                }
+            }
+            .section_juegos {
+                .juegos {
+                    justify-content: baseline;
+                    .card {
+                        width: 15rem;
+                        margin-left: 10px;
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+        footer {
+            height: 7vh;
+            p {
+                margin: 0%;
+            }
+            ul {
+                margin: 0%;
+            }
+        }
+    }
+    /*--------------------------------INICIAR SESION MEDIAQUERIE 1024--------------------------------*/
+    body {
+        height: 125vh;
+        .main_iniciarSesion {
+            .section_login {
+                .login {
+                    form {
+                        width: 80%;
+                    }
+                }
+            }
+            .section_crearCuenta {
+                .crear_cuenta {
+                    form {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+        footer {
+            height: 7vh;
+            p {
+                margin: 0%;
+            }
+            ul {
+                margin: 0%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .body_index {
+        height: 250vh;
+        .header_index {
+            .navbar {
+                .login_create {
+                    ul {
+                        margin-right: 3%;
+                    }
+                }
+            }
+        }
+        main {
+            .section_informacion {
+                justify-content: flex-start;
+                .servicios {
+                    width: 34%;
+                    h3 {
+                        height: 5vh;
+                    }
+                    height: 30vh;
+                    p {
+                        font-size: 13px;
+                        font-weight: bold;
+                    }
+                }
+                .ventajas {
+                    width: 34%;
+                    height: 30vh;
+                    h3 {
+                        height: 5vh;
+                    }
+                    p {
+                        font-size: 13px;
+                        font-weight: bold;
+                    }
+                }
+                .costos {
+                    width: 34%;
+                    height: 30vh;
+                    h3 {
+                        height: 5vh;
+                    }
+                    p {
+                        font-size: 13px;
+                        font-weight: bold;
+                    }
+                }
+            }
+            .section_juegos {
+                margin-top: 0%;
+                h3 {
+                    margin-top: 2%;
+                }
+                .juegos {
+                    justify-content: baseline;
+                    .card {
+                        width: 11rem;
+                    }
+                }
+            }
+            .section_contacto {
+                .contacto {
+                    input {
+                        width: 50%;
+                        padding-left: 20px;
+                    }
+                    textarea {
+                        margin-top: 5px;
+                        margin-bottom: 5px;
+                        padding-left: 20px;
+                    }
+                }
+            }
+            .section_suscripciones {
+                .carousel {
+                    width: 80%;
+                }
+            }
+        }
+        footer {
+            height: 7vh;
+        }
+    }
+    /*--------------------------------INICIAR SESION MEDIAQUERIE 768--------------------------------*/
+    body {
+        height: 120vh;
+        footer {
+            height: 7.5vh;
         }
     }
 }
