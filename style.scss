@@ -870,3 +870,144 @@ footer {
         }
     }
 }
+
+@media (max-width: 540px) {
+    .body_index {
+        .header_index {
+            .logo {
+                i {
+                    font-size: 1em;
+                }
+                h1 {
+                    font-size: 1em;
+                }
+            }
+            .login_create {
+                ul {
+                    li {
+                        a {
+                            font-size: 1em;
+                        }
+                    }
+                }
+            }
+        }
+        main {
+            .section_informacion {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .servicios {
+                    width: 70%;
+                    border-bottom: 1px solid $negro_opaco;
+                    p {
+                        font-size: 11px;
+                    }
+                    h3 {
+                        margin: 0px;
+                    }
+                }
+                .ventajas {
+                    width: 70%;
+                    border-bottom: 1px solid $negro_opaco;
+                    p {
+                        font-size: 11px;
+                    }
+                    h3 {
+                        margin: 0px;
+                    }
+                }
+                .costos {
+                    width: 70%;
+                    p {
+                        font-size: 11px;
+                    }
+                    h3 {
+                        margin: 0px;
+                    }
+                }
+            }
+            .section_contacto {
+                .contacto {
+                    h3 {
+                        width: 95%;
+                        padding: 5px;
+                    }
+                    form {
+                        input {
+                            width: 100%;
+                            padding: 0px;
+                            text-align: center;
+                        }
+                        textarea {
+                            width: 100%;
+                            padding: 0px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+            .section_suscripciones {
+                .carousel {
+                    width: 100%;
+                    .card {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+        footer {
+            p {
+                text-align: start;
+                font-size: 12px;
+            }
+            ul {
+                width: 30%;
+            }
+        }
+    }
+    body {
+        header {
+            .navbar {
+                .logo {
+                    width: 100%;
+                    a {
+                        margin: 0px;
+                        i {
+                            font-size: 1.5em;
+                        }
+                    }
+                    h1 {
+                        width: 90%;
+                        text-align: center;
+                        font-size: 1.5em;
+                    }
+                }
+            }
+        }
+        .main_iniciarSesion {
+            .section_login {
+                .login {
+                    form {
+                        width: 90%;
+                        input {
+                            width: 70%;
+                        }
+                        input[type="submit"] {
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+        }
+        footer {
+            p {
+                text-align: start;
+                font-size: 12px;
+            }
+            ul {
+                width: 30%;
+            }
+        }
+    }
+}

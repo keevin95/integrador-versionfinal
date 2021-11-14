@@ -1031,4 +1031,114 @@ footer ul li a i {
     width: 30%;
   }
 }
+
+@media (max-width: 540px) {
+  .body_index .header_index .logo i {
+    font-size: 1em;
+  }
+  .body_index .header_index .logo h1 {
+    font-size: 1em;
+  }
+  .body_index .header_index .login_create ul li a {
+    font-size: 1em;
+  }
+  .body_index main .section_informacion {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .body_index main .section_informacion .servicios {
+    width: 70%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+  }
+  .body_index main .section_informacion .servicios p {
+    font-size: 11px;
+  }
+  .body_index main .section_informacion .servicios h3 {
+    margin: 0px;
+  }
+  .body_index main .section_informacion .ventajas {
+    width: 70%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+  }
+  .body_index main .section_informacion .ventajas p {
+    font-size: 11px;
+  }
+  .body_index main .section_informacion .ventajas h3 {
+    margin: 0px;
+  }
+  .body_index main .section_informacion .costos {
+    width: 70%;
+  }
+  .body_index main .section_informacion .costos p {
+    font-size: 11px;
+  }
+  .body_index main .section_informacion .costos h3 {
+    margin: 0px;
+  }
+  .body_index main .section_contacto .contacto h3 {
+    width: 95%;
+    padding: 5px;
+  }
+  .body_index main .section_contacto .contacto form input {
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+  }
+  .body_index main .section_contacto .contacto form textarea {
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+  }
+  .body_index main .section_suscripciones .carousel {
+    width: 100%;
+  }
+  .body_index main .section_suscripciones .carousel .card {
+    width: 80%;
+  }
+  .body_index footer p {
+    text-align: start;
+    font-size: 12px;
+  }
+  .body_index footer ul {
+    width: 30%;
+  }
+  body header .navbar .logo {
+    width: 100%;
+  }
+  body header .navbar .logo a {
+    margin: 0px;
+  }
+  body header .navbar .logo a i {
+    font-size: 1.5em;
+  }
+  body header .navbar .logo h1 {
+    width: 90%;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  body .main_iniciarSesion .section_login .login form {
+    width: 90%;
+  }
+  body .main_iniciarSesion .section_login .login form input {
+    width: 70%;
+  }
+  body .main_iniciarSesion .section_login .login form input[type="submit"] {
+    width: 50%;
+  }
+  body footer p {
+    text-align: start;
+    font-size: 12px;
+  }
+  body footer ul {
+    width: 30%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
