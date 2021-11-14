@@ -683,6 +683,9 @@ footer {
                         font-weight: bold;
                     }
                 }
+                button {
+                    width: 70%;
+                }
             }
             .section_juegos {
                 margin-top: 0%;
@@ -724,6 +727,146 @@ footer {
         height: 120vh;
         footer {
             height: 7.5vh;
+        }
+    }
+}
+
+@media (max-width: 540px) {
+    .body_index {
+        height: 100vh;
+        .header_index {
+            .logo {
+                i {
+                    font-size: 2em;
+                }
+                h1 {
+                    font-size: 2em;
+                }
+            }
+        }
+        main {
+            .wave {
+                display: none;
+            }
+            .section_informacion {
+                justify-content: flex-start;
+                .servicios {
+                    width: 34%;
+                    height: 30vh;
+                    h3 {
+                        font-size: 15px;
+                        height: 5vh;
+                    }
+                    p {
+                        font-size: 10px;
+                        font-weight: bold;
+                    }
+                }
+                .ventajas {
+                    width: 34%;
+                    height: 30vh;
+                    h3 {
+                        font-size: 15px;
+                        height: 5vh;
+                    }
+                    p {
+                        font-size: 10px;
+                        font-weight: bold;
+                    }
+                }
+                .costos {
+                    width: 34%;
+                    height: 30vh;
+                    h3 {
+                        height: 5vh;
+                        font-size: 15px;
+                    }
+                    p {
+                        font-size: 10px;
+                        font-weight: bold;
+                    }
+                }
+            }
+            .section_juegos {
+                .juegos {
+                    justify-content: baseline;
+                    .card {
+                        width: 8rem;
+                        h4 {
+                            background-color: $negro_opaco;
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+            .section_contacto {
+                .contacto {
+                    h3 {
+                        font-size: 1em;
+                    }
+                    textarea {
+                        padding: 0%;
+                        padding-left: 10px;
+                    }
+                    input {
+                        width: 70%;
+                    }
+                    input[type="submit"] {
+                        width: 70%;
+                        padding: 0px;
+                    }
+                }
+            }
+            .section_suscripciones {
+                h2 {
+                    font-size: 2.5em;
+                }
+                .carousel {
+                    .card {
+                        width: 20rem;
+                    }
+                }
+            }
+        }
+    }
+    /*--------------------------------INICIAR SESION MEDIAQUERIE 540--------------------------------*/
+    body {
+        .main_iniciarSesion {
+            .section_login {
+                .login {
+                    form {
+                        width: 90%;
+                        input {
+                            width: 70%;
+                        }
+                        input[type="submit"] {
+                            width: 40%;
+                        }
+                    }
+                }
+            }
+            .section_crearCuenta {
+                .crear_cuenta {
+                    form {
+                        width: 90%;
+                        i {
+                            font-size: medium;
+                        }
+                        input {
+                            width: 90%;
+                        }
+                    }
+                }
+            }
+        }
+        footer {
+            p {
+                width: 70%;
+                font-size: 1em;
+            }
+            ul {
+                width: 30%;
+            }
         }
     }
 }

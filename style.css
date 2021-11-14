@@ -877,6 +877,9 @@ footer ul li a i {
     font-size: 13px;
     font-weight: bold;
   }
+  .body_index main .section_informacion button {
+    width: 70%;
+  }
   .body_index main .section_juegos {
     margin-top: 0%;
   }
@@ -912,6 +915,120 @@ footer ul li a i {
   }
   body footer {
     height: 7.5vh;
+  }
+}
+
+@media (max-width: 540px) {
+  .body_index {
+    height: 100vh;
+  }
+  .body_index .header_index .logo i {
+    font-size: 2em;
+  }
+  .body_index .header_index .logo h1 {
+    font-size: 2em;
+  }
+  .body_index main .wave {
+    display: none;
+  }
+  .body_index main .section_informacion {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .body_index main .section_informacion .servicios {
+    width: 34%;
+    height: 30vh;
+  }
+  .body_index main .section_informacion .servicios h3 {
+    font-size: 15px;
+    height: 5vh;
+  }
+  .body_index main .section_informacion .servicios p {
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .body_index main .section_informacion .ventajas {
+    width: 34%;
+    height: 30vh;
+  }
+  .body_index main .section_informacion .ventajas h3 {
+    font-size: 15px;
+    height: 5vh;
+  }
+  .body_index main .section_informacion .ventajas p {
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .body_index main .section_informacion .costos {
+    width: 34%;
+    height: 30vh;
+  }
+  .body_index main .section_informacion .costos h3 {
+    height: 5vh;
+    font-size: 15px;
+  }
+  .body_index main .section_informacion .costos p {
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .body_index main .section_juegos .juegos {
+    -webkit-box-pack: baseline;
+        -ms-flex-pack: baseline;
+            justify-content: baseline;
+  }
+  .body_index main .section_juegos .juegos .card {
+    width: 8rem;
+  }
+  .body_index main .section_juegos .juegos .card h4 {
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 10px;
+  }
+  .body_index main .section_contacto .contacto h3 {
+    font-size: 1em;
+  }
+  .body_index main .section_contacto .contacto textarea {
+    padding: 0%;
+    padding-left: 10px;
+  }
+  .body_index main .section_contacto .contacto input {
+    width: 70%;
+  }
+  .body_index main .section_contacto .contacto input[type="submit"] {
+    width: 70%;
+    padding: 0px;
+  }
+  .body_index main .section_suscripciones h2 {
+    font-size: 2.5em;
+  }
+  .body_index main .section_suscripciones .carousel .card {
+    width: 20rem;
+  }
+  /*--------------------------------INICIAR SESION MEDIAQUERIE 540--------------------------------*/
+  body .main_iniciarSesion .section_login .login form {
+    width: 90%;
+  }
+  body .main_iniciarSesion .section_login .login form input {
+    width: 70%;
+  }
+  body .main_iniciarSesion .section_login .login form input[type="submit"] {
+    width: 40%;
+  }
+  body .main_iniciarSesion .section_crearCuenta .crear_cuenta form {
+    width: 90%;
+  }
+  body .main_iniciarSesion .section_crearCuenta .crear_cuenta form i {
+    font-size: medium;
+  }
+  body .main_iniciarSesion .section_crearCuenta .crear_cuenta form input {
+    width: 90%;
+  }
+  body footer p {
+    width: 70%;
+    font-size: 1em;
+  }
+  body footer ul {
+    width: 30%;
   }
 }
 /*# sourceMappingURL=style.css.map */
