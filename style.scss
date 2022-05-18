@@ -195,6 +195,66 @@ main {
             @include ser-ven-cos;
         }
     }
+    .section_juegos_compra {
+        width: 100%;
+        background-color: $negro_opaco;
+        border-bottom: 2px solid $fuxia;
+        border-top: 2px solid $fuxia;
+        padding: 1%;
+        .juegos {
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: center;
+            width: 45%;
+            h2 {
+                color: $fuxia;
+                width: 100%;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            h3 {
+                width: 100%;
+                text-align: center;
+                color: $fuxia;
+                text-transform: uppercase;
+                font-style: italic;
+            }
+            .addCarrito {
+                margin-left: 10px;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                align-content: center;
+                .card {
+                    height: 100%;
+                    margin-left: 10px;
+                    width: 15rem;
+                    position: relative;
+                    border: 1px solid black;
+                    img {
+                        object-fit: cover;
+                        height: 100%;
+                    }
+                    h4,
+                    h3 {
+                        font-size: 1.3em;
+                        position: absolute;
+                        bottom: 0px;
+                        width: 100%;
+                        text-align: center;
+                        z-index: 5;
+                        color: white;
+                    }
+                }
+                p {
+                    text-align: center;
+                    color: $fuxia;
+                }
+            }
+        }
+    }
     .section_juegos {
         margin-top: 3%;
         width: 100%;
@@ -209,6 +269,12 @@ main {
             flex-direction: row;
             flex-wrap: wrap;
             align-content: center;
+            h2 {
+                color: $fuxia;
+                width: 100%;
+                text-align: center;
+                text-transform: uppercase;
+            }
             h3 {
                 width: 100%;
                 text-align: center;
@@ -225,7 +291,9 @@ main {
                     object-fit: cover;
                     height: 100%;
                 }
-                h4 {
+                h4,
+                h3 {
+                    font-size: 1.3em;
                     position: absolute;
                     bottom: 0px;
                     width: 100%;
@@ -380,8 +448,10 @@ footer {
     text-align: center;
     p {
         width: 50%;
+        margin-top: 15px;
     }
     ul {
+        margin-top: 15px;
         width: 50%;
         list-style: none;
         li {

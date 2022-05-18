@@ -46,17 +46,20 @@
                     <h3>CREAR CUENTA</h3>
 
                     <div class="datos">
-                        <i class="fas fa-envelope"></i><input type="mail" name="mail" id="" placeholder="Ingresu tu mail">
-                        <i class="fas fa-lock"></i><input type="password" placeholder="Password">
-                        <i class="fas fa-lock"></i><input type="password" placeholder="Repita la password">
-                        <i class="fas fa-mobile"></i><input type="number" placeholder="Ingresa tu celular">
+                        <i class="fas fa-envelope"></i><input type="mail" name="email" id="email" placeholder="Ingresu tu mail">
+
+                        <i class="fas fa-lock"></i><input type="password" placeholder="Password" id="password">
+
+                        <i class="fas fa-lock"></i><input type="password" placeholder="Repita la password" id="password2">
+
+                        <i class="fas fa-mobile"></i><input type="number" placeholder="Ingresa tu celular" id="cel">
 
                     </div>
 
-                    <select name="suscripcion" id="suscripcion">
-                        <option value="bronce">BRONCE</option>
-                        <option value="platinum">PLATINUM</option>
-                        <option value="gold">GOLD</option>
+                    <select name="suscripcion">
+                        <option id="suscripcion" value="bronce">BRONCE</option>
+                        <option id="suscripcion" value="platinum">PLATINUM</option>
+                        <option id="suscripcion" value="gold">GOLD</option>
                     </select>
 
                     <input type="submit" value="Crear cuenta" class="btn">
